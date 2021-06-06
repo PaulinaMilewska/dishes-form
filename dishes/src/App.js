@@ -26,8 +26,6 @@ function App() {
         }
         str = str + ", ";
 
-        console.log("keys", Object.keys(val)[0]);
-        console.log("valu", parseInt(Object.values(val)[0]));
         return "";
     });
     str = str.slice(0, -2);
@@ -46,8 +44,6 @@ function App() {
                     onSubmit={handleSubmit((data) => {
                         data = values;
                         setData(data);
-                        console.log("data", data);
-                        console.log("data", values);
                         axios
                             .post("https://frosty-wood-6558.getsandbox.com:443/dishes ", str, {
                                 headers: headers,

@@ -9,10 +9,8 @@ export const DishSelect = () => {
     const [diameter, setDiameter] = useState({ diameter: 0 });
     const [bread, setBread] = useState({ slices_of_bread: 0 });
     const [spiciness, setSpiciness] = useState({ spiciness_scale: 6 });
-
     const [fields, setFields] = useState([]);
     fieldsSelect = fields;
-    let print = [];
 
     return (
         <React.Fragment>
