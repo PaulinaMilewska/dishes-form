@@ -33,7 +33,6 @@ export const DishSelect = () => {
                         if (evt.target.value == "sandwich") {
                             setFields([{ type: `${evt.target.value}` }, bread]);
                         }
-                        console.log("FIELDS2", fields, type, evt.target.value);
                     }}
                     value={type}>
                     <MenuItem value={"pizza"}>Pizza</MenuItem>
@@ -41,7 +40,6 @@ export const DishSelect = () => {
                     <MenuItem value={"sandwich"}>Sandwich</MenuItem>
                 </Select>
                 <br></br>
-                {console.log("fields11: ", fields)}
                 {type === "pizza" && (
                     <div className="select-container">
                         <section>
@@ -51,8 +49,6 @@ export const DishSelect = () => {
                                     required={true}
                                     onChange={(evt) => {
                                         setSlices({ no_of_slices: `${evt.target.value}` });
-                                        console.log(slices);
-                                        console.log("1 SLICE FIELDS", fields);
                                         setFields([{ type: type }, { no_of_slices: evt.target.value }, diameter]);
                                     }}
                                     type="number"
@@ -110,7 +106,6 @@ export const DishSelect = () => {
                         </section>
                     </div>
                 )}
-                {(console.log("Print", Object.values(print)), console.log("ACTUAL FIELSD", fields), console.log("ACTUAL SLICES", slices), console.log("ACTUAL DIAMETER", diameter), console.log("ACTUAL SPICINESS", spiciness))}
             </section>
         </React.Fragment>
     );
