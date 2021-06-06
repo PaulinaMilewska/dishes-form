@@ -34,3 +34,11 @@ button.button {
     font-size: calc(10px + 2vmin);
     color: white;
 }
+
+.select-container {
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    border: 1px solid white;
+    border-radius: 8px;
+}
