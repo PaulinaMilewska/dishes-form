@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import { DishForm, fieldsForm } from "./components/DishForm";
 import ButtonsResult from "./components/ButtonsResult";
+import Header from "./components/Header";
 import { useForm } from "react-hook-form";
 import { DishSelect, fieldsSelect } from "./components/DishSelect";
 import axios from "axios";
@@ -40,6 +41,7 @@ function App() {
     return (
         <div className="App">
             <div className="App-content">
+                <Header />
                 <form
                     onSubmit={handleSubmit((data) => {
                         data = values;
